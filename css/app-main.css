@@ -176,13 +176,6 @@ a:focus {
     margin: 0 auto;
 }
 
-.footer {
-	background: #12A2AF;
-	padding: 12px 10px;
-	color: #fff;
-	font-family: "Roboto Condensed",sans-serif !important;
-	height: 300px;
-}
 
 .text_input {
   background: #f4f4f4 none repeat scroll 0 0;
