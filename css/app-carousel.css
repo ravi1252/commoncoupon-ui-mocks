@@ -54,6 +54,8 @@ body {
     background-repeat: no-repeat;
     background-size: auto 163%;
     padding-top: 7%;
+    height: auto;
+    min-height: 470px
 }
 
 /* Declare heights because of positioning of img element */

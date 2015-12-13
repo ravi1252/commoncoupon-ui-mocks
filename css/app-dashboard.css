@@ -225,18 +225,9 @@
 	font-size: 23px;
 }
 
+/** Leaf 1 css */
 .buy_ecard_panel_form .form_leaf_1 {
 	font-size: 40px;
-}
-
-.buy_ecard_panel_form  .form_leaf_1  .cus_textarea {
-	padding: 9px 20px 4px 11px;
-	font: normal 21px/normal "Times New Roman", Times, serif;
-	color: rgba(255,255,255,1);
-	text-shadow: 1px 1px 0 rgba(255,255,255,0.65) ;
-	background: transparent;
-	border: none;
-	border-bottom: 1px solid #fff;
 }
 
 .buy_ecard_panel_form .form_leaf_1 .next_arrow {
@@ -244,8 +235,19 @@
 	color: rgb(255, 255, 255); 
 	font-size: 43px; 
 	line-height: 1px;
-	color: rgba(213, 213, 213, 0.68);
+	//color: rgba(213, 213, 213, 0.68);
+	color: #fff;
 }
+
+/** Leaf 2 css */
+.buy_ecard_panel_form .form_leaf_2 {
+	font-size: 40px;
+}
+
+.buy_ecard_panel_form .form_leaf_2 .give_ur_details{
+	line-height: 1px;
+}
+
 
 /** Custom text box */
 .cus_text_box {
