@@ -35,7 +35,6 @@
     padding-bottom: 35px;
     position: relative;
     text-align: center;
-	font-family: 'Frijole', cursive;
 }
 .separator span {
     background: #cd1632 none repeat scroll 0 0;
@@ -113,13 +112,12 @@
 	border-image: none; 
 	border-color: rgb(228, 225, 218); 
 	margin-top: 8%;
-	font-family: "Roboto Condensed",sans-serif !important;
 }
 
 .update_box blockquote{
 	border-color: #231F20;
-	font-family: "Source Sans Pro",sans-serif ! important;
 	margin-bottom: 0px;
+	font-size: 18px;
 }
 
 .add_block{
@@ -154,9 +152,9 @@
 }
 
 .how_it_works {
-	font-family: "bello-pro",sans-serif;
-	//font-family: 'Frijole', cursive;
-    font-size: 35px;
+	//font-family: "bello-pro",sans-serif;
+	font-family: 'Frijole', cursive;
+    font-size: 24px;
     padding: 15px;
     text-align: center;
 }
@@ -201,31 +199,70 @@
 	color: rgb(255, 255, 255);
 }
 
-.buy_ecard_panel_enter_amount {
-	//font-family: "Raleway",sans-serif;
-	font-family: 'Ultra', serif;
-    font-size: 25px;
-    font-weight: 300;
-	line-height: 20px;
-}
-
 .buy_ecard_panel_blinking_text{
-	//font-family: "Raleway",sans-serif;
     font-family: 'Frijole', cursive;
 	font-size: 32px;
     font-weight: 500;
+	color: #D5D5D5;
+	line-height: 25px;
 }
 
 .buy_ecard_panel_form{
-	font-family: "Raleway",sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
 	//background: rgba(242, 94, 94, 0.3) none repeat scroll 0% 0%;
 	background : rgba(254, 52, 52, 0.3) none repeat scroll 0% 0%;
-	margin-top: 3%;
-	min-height: 215px;
+	margin-top: 7%;
+	min-height: 235px;
 	border-radius: 2px;
+	//font-family: 'Frijole', cursive;
+	font-family: 'GoodDog', cursive;
+	padding: 4px 20px;
 }
 
+.buy_ecard_panel_form .form_number_display {
+	text-align:right; 
+	font-size: 23px;
+}
 
+.buy_ecard_panel_form .form_leaf_1 {
+	font-size: 40px;
+}
+
+.buy_ecard_panel_form  .form_leaf_1  .cus_textarea {
+	padding: 9px 20px 4px 11px;
+	font: normal 21px/normal "Times New Roman", Times, serif;
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 1px 0 rgba(255,255,255,0.65) ;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #fff;
+}
+
+.cus_text_box {
+	font-size: 25px;
+}
+
+.cus_text_box .input-group-addon{
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+	padding: 6px 0;
+}
+
+.cus_text_box .form-control{
+	border: none;
+	border-radius: 0;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+	box-shadow: none;
+	height: 43px;
+}
 
