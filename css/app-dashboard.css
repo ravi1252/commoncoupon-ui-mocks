@@ -239,6 +239,15 @@
 	border-bottom: 1px solid #fff;
 }
 
+.buy_ecard_panel_form .form_leaf_1 .next_arrow {
+	text-align: right; 
+	color: rgb(255, 255, 255); 
+	font-size: 43px; 
+	line-height: 1px;
+	color: rgba(213, 213, 213, 0.68);
+}
+
+/** Custom text box */
 .cus_text_box {
 	font-size: 25px;
 }
