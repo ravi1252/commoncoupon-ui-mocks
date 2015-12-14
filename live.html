@@ -79,9 +79,11 @@
 				</div>
 				<div class="col-lg-12 p_none buy_ecard_panel_form">
 					<div class="col-lg-12 p_none form_number_display">
-						1/5
+						<span id="current_leaf_num">1</span>/5
 					</div>
-					<!--<div class="col-lg-12 p_none form_leaf_1">
+					
+					<!-- Leaf 1 -->
+					<div class="col-lg-12 p_none form_leaf_1 " id="leaf_1">
 						<div class="col-lg-12 p_none">
 							Amount
 						</div>
@@ -94,10 +96,12 @@
 							</div>
 						</div>
 						<div class="col-lg-4 p_none next_arrow">
-						  <i class="fa fa-arrow-circle-o-right"></i>
+						  <i class="fa fa-arrow-circle-o-right" id="leaf_1_next_arrow"></i>
 						</div>
-					</div>-->
-					<div class="col-lg-12 p_none form_leaf_2">
+					</div><!-- ./ Leaf 1 -->
+					
+					<!-- Leaf 2 -->
+					<div class="col-lg-12 p_none form_leaf_2" id="leaf_2">
 						<div class="col-lg-12 p_none give_ur_details">
 							Give your details
 						</div>
@@ -139,14 +143,34 @@
 								</div>
 							</div>
 							<div class="col-lg-2 p_none next_arrow">
-							  <i class="fa fa-arrow-circle-o-left"></i>
-							  <i class="fa fa-arrow-circle-o-right"></i>
+								<i class="fa fa-arrow-circle-o-right" id="leaf_2_next_arrow"></i>
+								<br/>
+								<i class="fa fa-arrow-circle-o-left"  id="leaf_2_previous_arrow"></i>
 							</div>
 						</div>
-					</div>
-				</div>
-				
-			</div>
+					</div><!-- ./ Leaf 2 -->
+					
+					<!-- Leaf 3 -->
+					<div class="col-lg-12 p_none form_leaf_3 " id="leaf_3">
+						<div class="col-lg-12 p_none">
+							Give Recipient details
+						</div>
+						<div class="col-lg-8 p_none" style="margin-top: 20px;">
+							<div class="form-group cus_text_box">
+								<div class="input-group">
+									<input type="text" class="form-control p_none" placeholder="Email Id">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 p_none next_arrow">
+							<i class="fa fa-arrow-circle-o-right" id="leaf_3_next_arrow"></i>
+							<br/>
+							<i class="fa fa-arrow-circle-o-left"  id="leaf_3_previous_arrow"></i>
+						</div>
+					</div><!-- ./ Leaf 3 -->
+					
+				</div> <!-- ./buy_ecard_panel_form -->
+			</div> <!-- ./buy_ecard_panel -->
 			
 		</div>
     </div>
@@ -285,7 +309,36 @@
     <script>
 		$( document ).ready(function() {
 			console.log( "ready!" );
+			$('#leaf_2, #leaf_3').hide();
 			
+			/** leaf_1 arrow actions */
+			$('#leaf_1_next_arrow').on( 'click', function(){
+				$('#leaf_1').hide();
+				$('#leaf_2').show();
+				$('#current_leaf_num').html('2');
+			});
+			
+			/** leaf_2 arrow actions */
+			$('#leaf_2_next_arrow').on( 'click', function(){
+				$('#leaf_1').hide();
+				$('#leaf_2').hide();
+				$('#leaf_3').show();
+				$('#current_leaf_num').html('3');
+			});
+			$('#leaf_2_previous_arrow').on( 'click', function(){
+				$('#leaf_2').hide();
+				$('#leaf_3').hide();
+				$('#leaf_1').show();
+				$('#current_leaf_num').html('1');
+			});
+			
+			/** leaf 3 arrow actions*/
+			$('#leaf_3_previous_arrow').on( 'click', function(){
+				$('#leaf_1').hide();
+				$('#leaf_3').hide();
+				$('#leaf_2').show();
+				$('#current_leaf_num').html('2');
+			});
 		});
     </script>
   </body>

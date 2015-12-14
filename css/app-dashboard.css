@@ -207,6 +207,12 @@
 	line-height: 25px;
 }
 
+
+/** common css for all leafs */
+.fa-arrow-circle-o-right, .fa-arrow-circle-o-left{
+	cursor: pointer;
+}
+
 .buy_ecard_panel_form{
     font-size: 20px;
     font-weight: 500;
@@ -247,6 +253,27 @@
 .buy_ecard_panel_form .form_leaf_2 .give_ur_details{
 	line-height: 1px;
 }
+
+.buy_ecard_panel_form .form_leaf_2 .next_arrow {
+	text-align: right; 
+	padding-top: 56px;
+	line-height: 1px;
+}
+
+/** Leaf 3 css */
+.buy_ecard_panel_form .form_leaf_3 {
+	font-size: 40px;
+}
+
+.buy_ecard_panel_form .form_leaf_3 .give_ur_details{
+	line-height: 1px;
+}
+
+.buy_ecard_panel_form .form_leaf_3 .next_arrow {
+	text-align: right; 
+	line-height: 1px;
+}
+
 
 
 /** Custom text box */
